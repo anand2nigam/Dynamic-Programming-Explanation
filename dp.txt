@@ -1,0 +1,13 @@
+Dynamic programming is a very useful concept into the process of designing of any algorithm. Before diving into the concepts and details on how to apply dynamic programming into your designing process of the algorithms, lets understand from where this term come and what is the story behind it. 
+		Dynamic Programming is invented by Richard Bellman (you have heard of him in Bellman-Ford Algorithm and many more). 
+The question that always come in mind that why he named the technique so, what is the relation in this naming convention, the real reason behind naming this was to hide the fact that he was doing a mathematical research at that time so in order to hide the fact he named it Dynamic Programming. He was working under some defense related branch whose head hated the term research that's why he did so at that time.
+		Now, coming back to our main topic Dynamic Programming. The very first question arise in mind is that what is 
+dynamic programming? Dynamic Programming is a general but powerful algorithm design technique. The reason why i am calling this general because there is nothing hard in applying it in your algorithm, basically it is applying brute force but carefully, in this we need to try all the possibilities in order to write an efficient algorithm that's it. And the reason behind it being powerful is that it can help in reducing the time and space complexity (or making a perfect balance between them) of the algorithm significantly and help in making the algorithm much more efficient.
+	In other words we can say that dynamic programming is a way of making an algorithm efficient in terms of its time and 
+space complexity. It helps in avoiding repetitive computations in any algorithm which helps in saving the time of the algorithm.
+		
+		Now,its time to answer the question how to apply the dynamic programming in algorithms. The three main approaches 
+to apply the dynamic programming in algorithms is 
+1. Recursion
+2. Memoization
+3. Bottom-up Approach
