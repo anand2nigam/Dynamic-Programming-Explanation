@@ -25,6 +25,8 @@ Recursive Approach :- The algorithm to solve this problem with this approach is 
 
 			return f
 
+This is going to take exponential time to complete the recursion. It is not an efficient algorithm. It is also called Naive approach of solving the problem. It contains a lot of repetitive computations which decreses the efficiency of the algorithm.
+
 
 Memoization Approach:- The memoized dynamic programming algorithm for the fibonacci series is as follows 
 		
@@ -37,6 +39,8 @@ Memoization Approach:- The memoized dynamic programming algorithm for the fibona
 
 			return f
 
+In this approach, we store the result of the intermediate steps so that they should not be repeatedly computed as in the recursive approach. This approach is very efficient and take linear time in completing the algorithm. Although it takes a little space in the memory but it helps in reducing the running time of the algorithm significantly
+
 
 Bottom-up Approach:- The bottom-up dynamic programming algorithm for the fibonacci series is as follows
 
@@ -47,3 +51,9 @@ Bottom-up Approach:- The bottom-up dynamic programming algorithm for the fibonac
 				fib[k] = f
 
 		return fib[n]
+
+In this approach, all the things are same as the Memoization approach, the time complexity is same the only major difference is in the space complexity, this approach takes less space in the memory because as it only needs to remember the two members which are less than the required result. In this manner this approach saves space and reduces space complexity of the algorithm.
+
+		In this way, you can apply dynamic programming concept to your algorithms and make them efficient in respect of time
+and space. The mantra to apply dynamic programming is to apply brute force of trying all the possibilities but carefully. In summary the dynamic programming can be summarized with the following formula to remember it :-
+					Dynamic Programming = Subproblems + Re-use 
