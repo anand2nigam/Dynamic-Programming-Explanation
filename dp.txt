@@ -1,6 +1,6 @@
 Dynamic programming is a very useful concept into the process of designing of any algorithm. Before diving into the concepts and details on how to apply dynamic programming into your designing process of the algorithms, lets understand from where this term come and what is the story behind it. 
 		Dynamic Programming is invented by Richard Bellman (you have heard of him in Bellman-Ford Algorithm and many more). 
-The question that always come in mind that why he named the technique so, what is the relation in this naming convention, the real reason behind naming this was to hide the fact that he was doing a mathematical research at that time so in order to hide the fact he named it Dynamic Programming. He was working under some defense related branch whose head hated the term research that's why he did so at that time.
+The question that always come in mind that why he named the technique so, what is the relation in this naming convention, the real reason behind naming this was to hide the fact that he was doing a mathematical research at that time so in order to hide the fact he named it Dynamic Programming. He was working under some defense related branch whose head hated the term research that's why he did so at that time. In simple words, its just a fancy word for a technique of designing of algorithms.
 		Now, coming back to our main topic Dynamic Programming. The very first question arise in mind is that what is 
 dynamic programming? Dynamic Programming is a general but powerful algorithm design technique. The reason why i am calling this general because there is nothing hard in applying it in your algorithm, basically it is applying brute force but carefully, in this we need to try all the possibilities in order to write an efficient algorithm that's it. And the reason behind it being powerful is that it can help in reducing the time and space complexity (or making a perfect balance between them) of the algorithm significantly and help in making the algorithm much more efficient.
 	In other words we can say that dynamic programming is a way of making an algorithm efficient in terms of its time and 
@@ -9,5 +9,41 @@ space complexity. It helps in avoiding repetitive computations in any algorithm 
 		Now,its time to answer the question how to apply the dynamic programming in algorithms. The three main approaches 
 to apply the dynamic programming in algorithms is 
 1. Recursion
-2. Memoization
+2. Memoization ( != memorization)
 3. Bottom-up Approach
+
+Let me explain these terms first then we will dive into an example in order to understand them in depth and will learn how to apply them in all the other problems. 
+The recursion approach in nothing fancy just solving the problem with the help of a recursing function, the memoiztion approach is about storing the necessary values which will help in avoiding the repetitive computations which will happen in the recursive only approach and its time complexity is also very efficient, the Bottom-up approach uses all the benefits of the abpve approaches and also save space, its about solving the problem by first solving the initial sub problems and using their results later to solve bigger problems.
+	Lets take an example which will give a better understanding about all these approaches and the concepts of dynamic 
+programming. Lets take an example of fibonacci series (I am hoping you all know about fibonacci series) in fibonacci sequence the number of any place n is the sum of the numbers at places (n-1) and (n-2) -:
+
+Recursive Approach :- The algorithm to solve this problem with this approach is as follows
+
+		fib(n)
+			if n<=2 ; f=1
+			else f = fib(n-1) + fib(n-2)
+
+			return f
+
+
+Memoization Approach:- The memoized dynamic programming algorithm for the fibonacci series is as follows 
+		
+		memo = { }
+		fib(n)
+			if n in memo ; return memo[n]
+			if n<=2 ; f=1
+			else f = fib(n-1) + fib(n-2)
+			memo[n] = f
+
+			return f
+
+
+Bottom-up Approach:- The bottom-up dynamic programming algorithm for the fibonacci series is as follows
+
+		fib = { }
+		for k in range (1, n+1)
+			if k<=2 ; f=1
+			else f = fib[k-1] + fib[n-2]
+				fib[k] = f
+
+		return fib[n]
